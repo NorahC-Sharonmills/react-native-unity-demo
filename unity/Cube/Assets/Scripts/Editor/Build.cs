@@ -20,6 +20,9 @@ public class Build : MonoBehaviour
         string buildPath = Path.Combine(apkPath, Application.productName);
         string exportPath = Path.GetFullPath(Path.Combine(ProjectPath, "../../android/UnityExport"));
 
+        UnityEngine.Debug.Log(buildPath);
+        UnityEngine.Debug.Log(exportPath);
+
         if (Directory.Exists(apkPath))
             Directory.Delete(apkPath, true);
 
